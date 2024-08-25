@@ -13,8 +13,10 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
+            
 
             li{
+                list-style: none;
                 a{
                     text-decoration: none;
                     font-family: letras-finas;

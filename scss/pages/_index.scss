@@ -556,7 +556,8 @@
         overflow: scroll;
         gap: 10%;
         position: relative;
-
+        margin-bottom: 100px;
+        scrollbar-width: none;
         .container-documental {
             min-width: 90%;
             height: 350px;
