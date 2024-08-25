@@ -1,0 +1,812 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: letras-finas;
+  src: url("../fonts/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: Kanit-BlackItalic;
+  src: url("../fonts/Kanit-BlackItalic.ttf");
+}
+@font-face {
+  font-family: Kanit-ExtraLight;
+  src: url("../fonts/Kanit-ExtraLight.ttf");
+}
+.header-index {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(29, 228, 235), rgb(19, 108, 192), rgb(7, 114, 122));
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  position: relative;
+}
+.header-index .container-logo {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.header-index .container-logo img {
+  width: 90px;
+  padding-bottom: 10px;
+}
+.header-index .container-logo h1 {
+  display: flex;
+  justify-content: center;
+  font-family: letras-finas;
+  width: 130px;
+  font-size: 20px;
+  color: aliceblue;
+  position: absolute;
+  top: 71px;
+}
+.header-index .container-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(6, 97, 100), rgb(19, 108, 192), rgb(3, 83, 88));
+  width: 100%;
+  height: 70px;
+  bottom: -70px;
+}
+.header-index .container-menu .container-casa {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+}
+.header-index .container-menu .container-casa:hover {
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(76, 0, 255));
+  overflow: hidden;
+}
+.header-index .container-menu .container-casa .techo {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  rotate: 45deg;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  border-radius: 2px 2px 0px 2px;
+}
+.header-index .container-menu .container-casa .casa {
+  width: 27px;
+  height: 27px;
+  position: relative;
+  background-color: aliceblue;
+  top: 20px;
+  left: 11px;
+  overflow: hidden;
+}
+.header-index .container-menu .container-casa .casa .puerta {
+  background-color: black;
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  border-radius: 10px 10px 0px 0px;
+}
+.header-index .container-menu .container-pez {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  padding-right: 55px;
+}
+.header-index .container-menu .container-pez:hover {
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(76, 0, 255));
+  overflow: hidden;
+}
+.header-index .container-menu .container-pez .pez-cuerpo {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  position: absolute;
+  border-radius: 100%;
+  bottom: 12px;
+  left: 10px;
+}
+.header-index .container-menu .container-pez .pez-cuerpo .ojo {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+.header-index .container-menu .container-pez .aleta {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  width: 10px;
+  height: 10px;
+  background-color: aliceblue;
+  rotate: 60deg;
+  border-radius: 1px 10px 0px 8px;
+}
+.header-index .container-menu .container-pez .coleta {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: aliceblue;
+  position: absolute;
+  left: 27px;
+  top: 21px;
+  border-radius: 10px;
+  box-shadow: 4px 0px 0px 0px aliceblue;
+}
+.header-index .container-menu .container-pez .coleta2 {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  top: 17px;
+  left: 38px;
+  rotate: 45deg;
+  box-shadow: 3px 0px 0px 0px aliceblue;
+}
+.header-index .container-menu .container-pez .coleta3 {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  top: 25px;
+  left: 38px;
+  rotate: -45deg;
+  box-shadow: 3px 0px 0px 0px aliceblue;
+}
+.header-index .container-menu .container-acuario {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.header-index .container-menu .container-acuario:hover {
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(76, 0, 255));
+  overflow: hidden;
+}
+.header-index .container-menu .container-acuario .acuario {
+  position: relative;
+  width: 90%;
+  height: 60%;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 255, 0.801);
+  border: solid black 1px;
+}
+.header-index .container-menu .container-acuario .acuario .arena {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  border-radius: 100px 100px 0px 0px;
+  background: linear-gradient(90deg, rgb(255, 196, 0), rgb(255, 238, 0));
+  bottom: 0;
+}
+.header-index .container-menu .container-acuario .acuario .franja {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  top: 0;
+}
+
+.main-index {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(0, 162, 255), rgba(17, 0, 255, 0.863));
+  overflow: hidden;
+  margin-top: 70px;
+}
+.main-index .burbujas1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas1 p {
+  font-size: 40px;
+  opacity: 50%;
+}
+.main-index .burbujas2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas2 p {
+  font-size: 60px;
+  opacity: 50%;
+}
+.main-index .burbujas3 {
+  display: flex;
+  transform: rotate3d(0, 1, 0, 180deg);
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 160px;
+  top: 160px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas3 p {
+  font-size: 40px;
+  opacity: 50%;
+}
+.main-index .burbujas4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 50px;
+  top: 250px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas4 p {
+  font-size: 45px;
+  opacity: 50%;
+}
+.main-index .burbujas5 {
+  display: flex;
+  transform: rotate3d(0, 1, 0, 180deg);
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 250px;
+  top: 50px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas5 p {
+  font-size: 60px;
+  opacity: 50%;
+}
+.main-index .burbujas6 {
+  display: flex;
+  transform: rotate3d(0, 1, 0, 180deg);
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 250px;
+  top: 500px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas6 p {
+  font-size: 55px;
+  opacity: 50%;
+}
+.main-index .burbujas7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 40px;
+  top: 450px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas7 p {
+  font-size: 60px;
+  opacity: 50%;
+  rotate: 30deg;
+}
+.main-index .burbujas8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 40px;
+  top: 670px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas8 p {
+  font-size: 60px;
+  opacity: 50%;
+  rotate: 30deg;
+}
+.main-index .burbujas9 {
+  display: flex;
+  transform: rotate3d(0, 1, 0, 180deg);
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 130px;
+  top: 1000px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas9 p {
+  font-size: 60px;
+  opacity: 50%;
+  rotate: 30deg;
+}
+.main-index .burbujas10 {
+  display: flex;
+  transform: rotate3d(0, 1, 0, 180deg);
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 120px;
+  top: 1300px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas10 p {
+  font-size: 100px;
+  opacity: 50%;
+  rotate: 30deg;
+}
+.main-index .burbujas11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, rgba(27, 79, 156, 0.685), rgba(0, 153, 255, 0.397));
+  border-radius: 100%;
+  position: absolute;
+  left: 120px;
+  top: 1800px;
+  box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
+}
+.main-index .burbujas11 p {
+  font-size: 100px;
+  opacity: 50%;
+  rotate: 30deg;
+}
+.main-index .container-textInicio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+}
+.main-index .container-textInicio h2 {
+  font-family: Kanit-BlackItalic;
+  color: rgb(255, 255, 255);
+  font-size: 27px;
+}
+.main-index .container-textInicio p {
+  background: linear-gradient(90deg, rgba(0, 255, 0, 0.89), rgba(255, 0, 0, 0.897));
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  font-family: Kanit-ExtraLight;
+  border-radius: 10px;
+}
+.main-index .titulo-noticias {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-family: Kanit-BlackItalic;
+  z-index: 1;
+}
+.main-index .container-ultimasNoticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 320px;
+  z-index: 1;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+}
+.main-index .container-ultimasNoticias .container-flechas {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+}
+.main-index .container-ultimasNoticias .container-flechas .contFlecha-izq {
+  width: 50px;
+  height: 80px;
+  background-color: rgba(87, 128, 128, 0.534);
+  border-radius: 30px;
+  position: relative;
+  margin-left: 5px;
+}
+.main-index .container-ultimasNoticias .container-flechas .contFlecha-izq:hover {
+  zoom: 1.1;
+  box-shadow: 0px 0px 10px 2px;
+}
+.main-index .container-ultimasNoticias .container-flechas .contFlecha-izq .palito-arriva {
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  rotate: -45deg;
+  border-radius: 3px 1px 1px 1px;
+  opacity: 80%;
+}
+.main-index .container-ultimasNoticias .container-flechas .contFlecha-izq .palito-abajo {
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 49px;
+  left: 5px;
+  rotate: 45deg;
+  border-radius: 1px 1px 1px 3px;
+  opacity: 80%;
+}
+.main-index .container-ultimasNoticias .container-flechas .contFlecha-der {
+  width: 50px;
+  height: 80px;
+  background-color: rgba(87, 128, 128, 0.534);
+  border-radius: 30px;
+  position: relative;
+  margin-right: 5px;
+}
+.main-index .container-ultimasNoticias .container-flechas .contFlecha-der:hover {
+  zoom: 1.1;
+  box-shadow: 0px 0px 10px 2px;
+}
+.main-index .container-ultimasNoticias .container-flechas .palito-arriva {
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  rotate: 45deg;
+  border-radius: 3px 1px 1px 1px;
+  opacity: 80%;
+}
+.main-index .container-ultimasNoticias .container-flechas .palito-abajo {
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 49px;
+  right: 5px;
+  rotate: -45deg;
+  border-radius: 1px 1px 1px 3px;
+  opacity: 80%;
+}
+.main-index .container-ultimasNoticias .Carrusel {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: scroll;
+  scrollbar-width: none;
+  margin-left: 6px;
+  margin-right: 6px;
+  gap: 30px;
+  animation-name: mover-derecha;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.main-index .container-ultimasNoticias .Carrusel .container-comoArmarAcuario {
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+}
+.main-index .container-ultimasNoticias .Carrusel .container-comoArmarAcuario p {
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  color: aliceblue;
+  background: linear-gradient(90deg, rgba(0, 255, 0, 0.897), rgba(255, 0, 0, 0.904), rgba(0, 0, 0, 0.89));
+  border-radius: 10px;
+  z-index: 1;
+}
+.main-index .container-ultimasNoticias .Carrusel .container-comoArmarAcuario img {
+  width: 360px;
+  height: 100%;
+  border-radius: 20px;
+}
+.main-index .container-ultimasNoticias .Carrusel .container-recomendado {
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+}
+.main-index .container-ultimasNoticias .Carrusel .container-recomendado img {
+  width: 360px;
+  height: 100%;
+  border-radius: 20px;
+}
+.main-index .container-ultimasNoticias .Carrusel .container-recomendado p {
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  color: aliceblue;
+  background: linear-gradient(90deg, rgba(0, 255, 0, 0.897), rgba(255, 0, 0, 0.904), rgba(71, 22, 22, 0.89));
+  border-radius: 10px;
+  z-index: 1;
+}
+.main-index .videos-interesantes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-top: 20px;
+}
+.main-index .videos-interesantes h2 {
+  font-family: Kanit-BlackItalic;
+  color: rgb(255, 255, 255);
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.main-index .videos-interesantes .lipiar-acuario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+}
+.main-index .videos-interesantes .lipiar-acuario p {
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  padding: 5px;
+  color: aliceblue;
+}
+.main-index .videos-interesantes .lipiar-acuario h2 {
+  display: flex;
+  justify-content: center;
+}
+.main-index .videos-interesantes .goldfish-cuidados {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+}
+.main-index .videos-interesantes .goldfish-cuidados h2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.main-index .videos-interesantes .goldfish-cuidados p {
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  padding: 5px;
+  color: aliceblue;
+}
+.main-index .videos-interesantes .acuarios-comunitarios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+}
+.main-index .videos-interesantes .acuarios-comunitarios h2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.main-index .videos-interesantes .acuarios-comunitarios p {
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  padding: 5px;
+  color: aliceblue;
+}
+.main-index .videos-interesantes .plantas-faciles {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+}
+.main-index .videos-interesantes .plantas-faciles h2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.main-index .videos-interesantes .plantas-faciles p {
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  padding: 5px;
+  color: aliceblue;
+}
+.main-index .container-tituloEducativo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main-index .container-tituloEducativo h2 {
+  font-size: 30px;
+  font-family: Kanit-BlackItalic;
+  color: aliceblue;
+}
+.main-index .contenido-eduContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+  gap: 10%;
+  position: relative;
+}
+.main-index .contenido-eduContainer .container-documental {
+  min-width: 90%;
+  height: 350px;
+  border-radius: 10px;
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.main-index .contenido-eduContainer .container-documental img {
+  width: 100%;
+  height: 100%;
+}
+.main-index .contenido-eduContainer .container-documental .informacion {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.541), rgba(0, 255, 0, 0.479));
+}
+.main-index .contenido-eduContainer .container-documental .informacion h2 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-family: Kanit-BlackItalic;
+  color: aliceblue;
+}
+.main-index .contenido-eduContainer .container-documental .informacion h2:hover {
+  background: red;
+}
+.main-index .contenido-eduContainer .container-documental .informacion p {
+  position: absolute;
+  top: 100px;
+  font-size: 20px;
+  font-family: anit-ExtraLight;
+  color: aliceblue;
+  padding: 10px;
+}
+.main-index .contenido-eduContainer .container-documental button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, rgb(235, 54, 54), rgb(204, 32, 32));
+  color: aliceblue;
+  font-family: Kanit-BlackItalic;
+}
+.main-index .contenido-eduContainer .container-documental button:hover {
+  box-shadow: 0 0 10px 5px;
+  border: solid black 1px;
+  cursor: pointer;
+}
+
+.footer-index {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(29, 228, 235), rgb(19, 108, 192), rgb(7, 114, 122));
+}
+.footer-index .container-links1 {
+  display: flex;
+  margin: 10px;
+}
+.footer-index .container-links1 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-index .container-links1 ul li a {
+  text-decoration: none;
+  font-family: letras-finas;
+  color: aliceblue;
+}
+.footer-index .container-links2 {
+  display: flex;
+  margin: 10px;
+}
+.footer-index .container-links2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-index .container-links2 ul li {
+  list-style: none;
+}
+.footer-index .container-links2 ul li a {
+  text-decoration: none;
+  font-family: letras-finas;
+  color: aliceblue;
+}
+.footer-index .container-links3 {
+  display: flex;
+  margin: 10px;
+}
+.footer-index .container-links3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-index .container-links3 ul li {
+  list-style: none;
+}
+.footer-index .container-links3 ul li a {
+  text-decoration: none;
+  font-family: letras-finas;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */
