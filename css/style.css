@@ -814,6 +814,38 @@
   color: aliceblue;
 }
 
+.main-index .container-buscador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 3px;
+}
+.main-index .container-buscador input {
+  z-index: 1;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 47px;
+  outline: none;
+}
+.main-index .container-buscador input:hover {
+  box-shadow: 8.5px 0 15px 12px;
+}
+.main-index .container-buscador .btnBuscarP {
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  right: 48px;
+  background: linear-gradient(90deg, yellow, red);
+  padding: 10px;
+}
+.main-index .container-buscador .btnBuscarP:hover {
+  box-shadow: 0 0 10px 1px red;
+}
 .main-index .container-wikiPeces {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -822,7 +854,7 @@
   padding: 10px;
   margin: 2px;
   border-radius: 10px;
-  gap: 5px;
+  gap: 10px;
 }
 .main-index .container-wikiPeces .container-aguaDulce {
   display: flex;
@@ -864,6 +896,50 @@
   list-style: none;
 }
 .main-index .container-wikiPeces .container-aguaSalada a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Kanit-ExtraLight;
+}
+.main-index .container-wikiPeces .Invertebrados {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, lime, red);
+}
+.main-index .container-wikiPeces .Invertebrados h2 {
+  font-family: letras-finas;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.main-index .container-wikiPeces .Invertebrados li {
+  list-style: none;
+}
+.main-index .container-wikiPeces .Invertebrados a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Kanit-ExtraLight;
+}
+.main-index .container-wikiPeces .reptiles {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, lime, red);
+}
+.main-index .container-wikiPeces .reptiles h2 {
+  font-family: letras-finas;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.main-index .container-wikiPeces .reptiles li {
+  list-style: none;
+}
+.main-index .container-wikiPeces .reptiles a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Kanit-ExtraLight;

@@ -1,5 +1,43 @@
 .main-index {
-    .container-wikiPeces{
+    .container-buscador {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        gap: 3px;         
+        input {
+            z-index: 1;
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 47px;
+            outline: none;
+            
+            &:hover{
+                box-shadow: 8.5px 0 15px 12px;
+            }
+        }
+
+        .btnBuscarP{
+            position: relative;
+            z-index: 1;
+            border: none;
+            border-radius: 5px;
+            padding: 2px;
+            right: 48px;
+            background: linear-gradient(90deg,yellow,red);
+            padding: 10px;
+
+            &:hover{
+                box-shadow: 0 0 10px 1px red;
+            }
+        }
+
+        
+    }
+
+    .container-wikiPeces {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
@@ -7,7 +45,9 @@
         padding: 10px;
         margin: 2px;
         border-radius: 10px;
-        gap: 5px;
+        gap: 10px;
+
+
 
         .container-aguaDulce {
             display: flex;
@@ -16,43 +56,97 @@
             gap: 10px;
             padding: 5px;
             border-radius: 10px;
-            background: linear-gradient(90deg,lime,red);
-            h2{
+            background: linear-gradient(90deg, lime, red);
+
+            h2 {
                 font-family: letras-finas;
                 font-size: 17px;
                 letter-spacing: 2px;
             }
 
-            li{
+            li {
                 list-style: none;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 font-family: Kanit-ExtraLight;
             }
         }
 
-        .container-aguaSalada{
+        .container-aguaSalada {
             display: flex;
             flex-direction: column;
             z-index: 1;
             gap: 10px;
             padding: 5px;
             border-radius: 10px;
-            background: linear-gradient(90deg,lime,red);
-            h2{
+            background: linear-gradient(90deg, lime, red);
+
+            h2 {
                 font-family: letras-finas;
                 font-size: 17px;
                 letter-spacing: 2px;
             }
 
-            li{
+            li {
                 list-style: none;
             }
 
-            a{
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-family: Kanit-ExtraLight;
+            }
+        }
+
+        .Invertebrados {
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, lime, red);
+
+            h2 {
+                font-family: letras-finas;
+                font-size: 17px;
+                letter-spacing: 2px;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-family: Kanit-ExtraLight;
+            }
+        }
+
+        .reptiles {
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, lime, red);
+
+            h2 {
+                font-family: letras-finas;
+                font-size: 17px;
+                letter-spacing: 2px;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            a {
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 font-family: Kanit-ExtraLight;
@@ -60,5 +154,5 @@
         }
     }
 
-    
+
 }
