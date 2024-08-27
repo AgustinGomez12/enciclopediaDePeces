@@ -118,80 +118,49 @@ function contenidoPeces() {
 //FUNCION PARA GENERAR LA INFORMACION DE LOS PECES
 
 //VARIABLES PARA GENERARA CONTENIDO EN PECES
-const pecesDeAguaDulce = document.createElement("div")
-const pecesDeAguaSalada = document.createElement("div")
-const pecesExoticos = document.createElement("div")
-const talasoFobia = document.createElement("div")
+const generarNavPeces = document.createElement("div")
 //VARIABLES PARA GENERARA CONTENIDO EN PECES
 function generarContenidoPeces() {
-    containerPez.addEventListener(`click`, () => {
-        pecesDeAguaDulce.className = "container-aguaDulce"
-        pecesDeAguaDulce.id = "containerAguaDulce"
-        pecesDeAguaDulce.innerHTML = `<div class="titulo">
-                                          <h2>PECES DE AGUA DULCE</h2>
-                                          <nav>
-                                            <figure>
-                                                  <h2>Aguja de rio</h2>
-                                                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Syngnathus_abaster_body_B.jpg" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Anguila Criolla</h2>
-                                                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Synbranchus_cf_marmoratus.jpg/1024px-Synbranchus_cf_marmoratus.jpg" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Acaronia nassa</h2>
-                                                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Acaronia_nassa.jpg" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Amblydoras nauticus</h2>
-                                                  <img src="https://th.bing.com/th/id/OIP.n1i3NOc_1HJhQC1YaoLfWAHaE8?rs=1&pid=ImgDetMain" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Aplochiton taeniatus</h2>
-                                                  <img src="https://th.bing.com/th/id/OIP.QYBI9neFHo981XxRZHFw5gHaFE?rs=1&pid=ImgDetMain" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Aplochiton zebra</h2>
-                                                  <img src="https://th.bing.com/th/id/OIP.2wdvGfQLteS9GmxASl-bGgHaE7?rs=1&pid=ImgDetMain" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Arapaima</h2>
-                                                  <img src="https://th.bing.com/th/id/R.14a10a9fbbd410fa958c95daf60ced91?rik=VkwDsUZa9%2fNJ9Q&pid=ImgRaw&r=0" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Anguilas</h2>
-                                                  <img src="https://th.bing.com/th/id/OIP.Jd0d9Hb9GbPTaMu_FpHviQHaE6?rs=1&pid=ImgDetMain" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Arcoíris</h2>
-                                                  <img src="https://th.bing.com/th/id/OIP.T4olE5N9J9tFCRmKK4yeUAHaE8?rs=1&pid=ImgDetMain" alt="">
-                                            </figure>
-                                            <figure>
-                                                  <h2>Angel</h2>
-                                                  <img src="https://th.bing.com/th/id/R.ead94dcd725a3af2dceed206795c0780?rik=lZUw6FBcywaf%2fg&pid=ImgRaw&r=0" alt="">
-                                            </figure>
-                                          </nav>
-                                      </div>`
-        pecesDeAguaSalada.className = "container-aguaSalada"
-        pecesDeAguaSalada.id = "containerAguaSalada"
-        pecesDeAguaSalada.innerHTML = `<div class="titulo">
-                                           <h2>Peces de agua salada</h2>
-                                       </div>`
-        pecesExoticos.className = "container-pecesExoticos"
-        pecesExoticos.id = "pecesExoticos"
-        pecesExoticos.innerHTML = `<div class="titulo">
-                                       <h2>Peces Exoticos</h2>
-                                   </div>`
-        talasoFobia.className = "container-talasoFobia"
-        talasoFobia.id = "talasoFobia"
-        talasoFobia.innerHTML = `<div class="titulo">
-                                      <h2>Talaso fobia</h2>
-                                 </div>`                                                                                            
-    mainIndex.appendChild(pecesDeAguaDulce)
-    mainIndex.appendChild(pecesDeAguaSalada)
-    mainIndex.appendChild(pecesExoticos)
-    mainIndex.appendChild(talasoFobia)                                
-    })
+generarNavPeces.className = "navbar-peces"
+generarNavPeces.id = "navbarPeces"
+generarNavPeces.innerHTML = `<nav class="container-wikiPeces">
+                                 <ul>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>
+                                    <li>
+                                    <a href=""></a>
+                                    </li>                                  
+                                 </ul>
+                             </nav>`     
+mainIndex.appendChild(generarNavPeces)  
 
 }generarContenidoPeces()
+
+//FUNCION PARA GENERAR LA INFORMACION DE LOS PECES
+
 
