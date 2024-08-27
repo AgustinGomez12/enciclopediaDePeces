@@ -815,8 +815,58 @@
 }
 
 .main-index .container-wikiPeces {
-  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
   z-index: 1;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 10px;
+  gap: 5px;
+}
+.main-index .container-wikiPeces .container-aguaDulce {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, lime, red);
+}
+.main-index .container-wikiPeces .container-aguaDulce h2 {
+  font-family: letras-finas;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.main-index .container-wikiPeces .container-aguaDulce li {
+  list-style: none;
+}
+.main-index .container-wikiPeces .container-aguaDulce a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Kanit-ExtraLight;
+}
+.main-index .container-wikiPeces .container-aguaSalada {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, lime, red);
+}
+.main-index .container-wikiPeces .container-aguaSalada h2 {
+  font-family: letras-finas;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.main-index .container-wikiPeces .container-aguaSalada li {
+  list-style: none;
+}
+.main-index .container-wikiPeces .container-aguaSalada a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Kanit-ExtraLight;
 }
 
 /*# sourceMappingURL=style.css.map */

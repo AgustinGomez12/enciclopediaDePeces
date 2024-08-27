@@ -124,37 +124,333 @@ function generarContenidoPeces() {
 generarNavPeces.className = "navbar-peces"
 generarNavPeces.id = "navbarPeces"
 generarNavPeces.innerHTML = `<nav class="container-wikiPeces">
-                                 <ul>
-                                    <li>
-                                    <a href=""></a>
+                                 <ul class="container-aguaDulce">
+                                    <h2>
+                                        Peces de agua Dulce 
+                                    </h2>
+                                      <li>
+                                    <a href="">
+                                        Goldfish                                    
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Pez betta                                    
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Guppy
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Tetra neón
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Pez Ángel
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Corydoras
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Tetra
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Tetra azul
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
+                                    <a href="">
+                                        Barbo Rosado
+                                    </a>
                                     </li>
+
                                     <li>
-                                    <a href=""></a>
-                                    </li>                                  
+                                    <a href="">
+                                        Pez arcoiris
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Pez cebra
+                                    </a>
+                                    </li>
+                                    
+                                    <li>
+                                    <a href="">
+                                         Pez killis   
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez espiga
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez gato
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez globo
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Piraña
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez lucio
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez arowana
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez cuchilla negra
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Paiche
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez espiga
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Dorado
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Siluro
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Arowana amazónica
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Acara azul
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Perca americana
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         pez dragón africano 
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez tigre goliat
+                                    </a>
+                                    </li>
+                                 </ul>
+                                 
+                                 <ul class="container-aguaSalada">
+                                    <h2>
+                                        Peces de agua salada 
+                                    </h2>
+
+                                    <li>
+                                    <a href="">
+                                         Pez payaso
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez cirujano
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez dardo
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez navaja
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez mandibula azul
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Damiselas
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Estrellas de mar
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Cirujano amarillo
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                         Pez pez Unicornio
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                       Atún blanco
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                       Barracuda
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                       Tiburón 
+                                    </a>
+                                    </li>
+                                    
+                                    <li>
+                                    <a href="">
+                                       Pez ángel (agua salada) 
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                       Gobios
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                       pez mariposa
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Pez ángel emperador
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Pez mandarín
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Pez lábrido
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Dottyback
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Gobio payaso
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Pez Halcón
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Pez Cardenal
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Chromis verde
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Blenny bicolor
+                                    </a>
+                                    </li>
+
+                                    <li>
+                                    <a href="">
+                                        Delfin
+                                    </a>
+                                    </li>
                                  </ul>
                              </nav>`     
 mainIndex.appendChild(generarNavPeces)  
