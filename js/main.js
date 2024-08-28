@@ -3,21 +3,6 @@ const mainIndex = document.getElementById("mainIndex")
 //Constante de el main Index
 
 //FUNCION PARA RECUPERAR INDEX
-//VARIABLES DE RECUPERAR INDEX
-const containerCasa = document.getElementById("containerCasa")
-//VARIABLES DE RECUPERAR INDEX
-function recuperarIndex () {
-containerCasa.addEventListener(`click`, ()=>{
-    textoDeIncio.style.display = "flex"
-    tituloDeNoticias.style.display = "flex"
-    containerDeNoticias.style.display = "flex"
-    videosInteresantes.style.display = "flex"
-    contenidoEducativoTitulo.style.display = "flex"
-    contenidoEducativo.style.display = "flex"
-    pulpito.style.display = "flex"
-    navbarPeces.style.display = "none"
-})}recuperarIndex()
-//FUNCION PARA RECUPERAR INDEX
 //Constate de boton del ducumental
 const btnDocu = document.getElementById("buttonDocumentales")
 const btnDocu2 = document.getElementById("buttonDocumentales2")
@@ -111,7 +96,7 @@ const videosInteresantes = document.getElementById("videosInteresantes")
 //VARIABLE DE VIDEOS INTERESANTES
 
 //VARIABLE DE CONTENIDO EDUCATIVO TITULO
-const contenidoEducativoTitulo = document.getElementById("contenidoEducativoTitulo")
+const tituloEdu = document.getElementById("tituloEdu")
 //VARIABLE DE CONTENIDO EDUCATIVO TITULO
 
 //VARIABLE DE CONTENIDO EDUCATIVO
@@ -121,14 +106,13 @@ const contenidoEducativo = document.getElementById("contenidoEducativo")
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
 function contenidoPeces() {
     containerPez.addEventListener(`click`, () => {
-        textoDeIncio.style.display = "none"
-        tituloDeNoticias.style.display = "none"
-        containerDeNoticias.style.display = "none"
-        videosInteresantes.style.display = "none"
-        contenidoEducativoTitulo.style.display = "none"
-        contenidoEducativo.style.display = "none"
-        pulpito.style.display = "none"
-        navbarPeces.style.display = "grid"
+      navbarPeces.style.display = "flex"
+      textoDeIncio.style.display = "none"
+      tituloDeNoticias.style.display = "none"
+      containerDeNoticias.style.display = "none"
+      videosInteresantes.style.display = "none"
+      tituloEdu.style.display = "none"
+      contenidoEducativo.style.display = "none" 
     })
 } contenidoPeces()
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
@@ -142,7 +126,7 @@ const pulpito = document.getElementById("pulpito")
 function generarContenidoPeces() {
     generarNavPeces.className = "navbar-peces"
     generarNavPeces.id = "navbarPeces"
-    generarNavPeces.innerHTML = `<div class="container-buscador">
+    generarNavPeces.innerHTML = `<div class="container-buscador" id="containerBuscador">
                                      <input type="search" placeholder="Buscar por nombre🔍" name="buscadorPesces" id="buscadorP">
                                      <button class="btnBuscarP">Buscar</button>
                                 </div>` +
@@ -600,8 +584,7 @@ function generarContenidoPeces() {
                              </div>` 
 
     mainIndex.appendChild(generarNavPeces)
-
-} generarContenidoPeces()
+}generarContenidoPeces()
 
 //FUNCION PARA GENERAR LA INFORMACION DE LOS PECES
 
@@ -611,15 +594,28 @@ function generarContenidoPeces() {
 const containerAcuario = document.getElementById("containerAcuario")
 const navbarPeces = document.getElementById("navbarPeces")
 //VARIABLES PARA GENERAR ACUARIOS
+
+
 function generarAcuarios () {
 containerAcuario.addEventListener(`click`,()=>{
-    textoDeIncio.style.display = "none"
-    tituloDeNoticias.style.display = "none"
-    containerDeNoticias.style.display = "none"
-    videosInteresantes.style.display = "none"
-    contenidoEducativoTitulo.style.display = "none"
-    contenidoEducativo.style.display = "none"
-    navbarPeces.style.display = "none"
+ 
 })
 }generarAcuarios()
 //FUNCION PARA GENERAR ACUARIOS
+
+//FUNCION PARA RECUPERAR INDEX
+//VARIABLES DE RECUPERAR INDEX
+const containerCasa = document.getElementById("containerCasa")
+const containerBuscador = document.getElementById("containerBuscador")
+//VARIABLES DE RECUPERAR INDEX
+function recuperarIndex () {
+containerCasa.addEventListener(`click`, ()=>{
+   generarNavPeces.style.display = `none`
+   textoDeIncio.style.display = "flex"
+   tituloDeNoticias.style.display = "flex"
+   containerDeNoticias.style.display = "flex"
+   videosInteresantes.style.display = "flex"
+   tituloEdu.style.display = "flex"
+   contenidoEducativo.style.display = "flex"
+})
+}recuperarIndex()

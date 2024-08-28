@@ -683,7 +683,7 @@
 .main-index .container-tituloEducativo h2 {
   font-size: 30px;
   font-family: Kanit-BlackItalic;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 .main-index .contenido-eduContainer {
   display: flex;
@@ -814,7 +814,12 @@
   color: aliceblue;
 }
 
-.main-index .container-buscador {
+.main-index .navbar-peces {
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+}
+.main-index .navbar-peces .container-buscador {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -822,7 +827,7 @@
   width: 100%;
   gap: 3px;
 }
-.main-index .container-buscador input {
+.main-index .navbar-peces .container-buscador input {
   z-index: 1;
   border: none;
   border-radius: 5px;
@@ -830,10 +835,10 @@
   padding-right: 47px;
   outline: none;
 }
-.main-index .container-buscador input:hover {
+.main-index .navbar-peces .container-buscador input:hover {
   box-shadow: 8.5px 0 15px 12px;
 }
-.main-index .container-buscador .btnBuscarP {
+.main-index .navbar-peces .container-buscador .btnBuscarP {
   position: relative;
   z-index: 1;
   border: none;
@@ -843,17 +848,17 @@
   background: linear-gradient(90deg, yellow, red);
   padding: 10px;
 }
-.main-index .container-buscador .btnBuscarP:hover {
+.main-index .navbar-peces .container-buscador .btnBuscarP:hover {
   box-shadow: 0 0 10px 1px red;
 }
-.main-index .Introduccion-peces {
+.main-index .navbar-peces .Introduccion-peces {
   display: flex;
   width: 100%;
   height: 100%;
   z-index: 1;
   padding: 5px;
 }
-.main-index .Introduccion-peces p {
+.main-index .navbar-peces .Introduccion-peces p {
   font-family: Kanit-ExtraLight;
   z-index: 1;
   color: aliceblue;
@@ -861,7 +866,7 @@
   border-radius: 5px;
   padding: 5px;
 }
-.main-index .container-wikiPeces {
+.main-index .navbar-peces .container-wikiPeces {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
@@ -872,7 +877,7 @@
   gap: 10px;
   margin-bottom: 50px;
 }
-.main-index .container-wikiPeces .container-aguaDulce {
+.main-index .navbar-peces .container-wikiPeces .container-aguaDulce {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -881,20 +886,20 @@
   border-radius: 10px;
   background: linear-gradient(90deg, lime, red);
 }
-.main-index .container-wikiPeces .container-aguaDulce h2 {
+.main-index .navbar-peces .container-wikiPeces .container-aguaDulce h2 {
   font-family: letras-finas;
   font-size: 17px;
   letter-spacing: 2px;
 }
-.main-index .container-wikiPeces .container-aguaDulce li {
+.main-index .navbar-peces .container-wikiPeces .container-aguaDulce li {
   list-style: none;
 }
-.main-index .container-wikiPeces .container-aguaDulce a {
+.main-index .navbar-peces .container-wikiPeces .container-aguaDulce a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Kanit-ExtraLight;
 }
-.main-index .container-wikiPeces .container-aguaSalada {
+.main-index .navbar-peces .container-wikiPeces .container-aguaSalada {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -903,20 +908,20 @@
   border-radius: 10px;
   background: linear-gradient(90deg, lime, red);
 }
-.main-index .container-wikiPeces .container-aguaSalada h2 {
+.main-index .navbar-peces .container-wikiPeces .container-aguaSalada h2 {
   font-family: letras-finas;
   font-size: 17px;
   letter-spacing: 2px;
 }
-.main-index .container-wikiPeces .container-aguaSalada li {
+.main-index .navbar-peces .container-wikiPeces .container-aguaSalada li {
   list-style: none;
 }
-.main-index .container-wikiPeces .container-aguaSalada a {
+.main-index .navbar-peces .container-wikiPeces .container-aguaSalada a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Kanit-ExtraLight;
 }
-.main-index .container-wikiPeces .Invertebrados {
+.main-index .navbar-peces .container-wikiPeces .Invertebrados {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -925,20 +930,20 @@
   border-radius: 10px;
   background: linear-gradient(90deg, lime, red);
 }
-.main-index .container-wikiPeces .Invertebrados h2 {
+.main-index .navbar-peces .container-wikiPeces .Invertebrados h2 {
   font-family: letras-finas;
   font-size: 17px;
   letter-spacing: 2px;
 }
-.main-index .container-wikiPeces .Invertebrados li {
+.main-index .navbar-peces .container-wikiPeces .Invertebrados li {
   list-style: none;
 }
-.main-index .container-wikiPeces .Invertebrados a {
+.main-index .navbar-peces .container-wikiPeces .Invertebrados a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Kanit-ExtraLight;
 }
-.main-index .container-wikiPeces .reptiles {
+.main-index .navbar-peces .container-wikiPeces .reptiles {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -947,77 +952,77 @@
   border-radius: 10px;
   background: linear-gradient(90deg, lime, red);
 }
-.main-index .container-wikiPeces .reptiles h2 {
+.main-index .navbar-peces .container-wikiPeces .reptiles h2 {
   font-family: letras-finas;
   font-size: 17px;
   letter-spacing: 2px;
 }
-.main-index .container-wikiPeces .reptiles li {
+.main-index .navbar-peces .container-wikiPeces .reptiles li {
   list-style: none;
 }
-.main-index .container-wikiPeces .reptiles a {
+.main-index .navbar-peces .container-wikiPeces .reptiles a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Kanit-ExtraLight;
 }
-.main-index .explicacion-aguaDulce {
+.main-index .navbar-peces .explicacion-aguaDulce {
   margin: 20px;
   border-radius: 10px;
   background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
 }
-.main-index .explicacion-aguaDulce h2 {
+.main-index .navbar-peces .explicacion-aguaDulce h2 {
   font-family: letras-finas;
   color: aliceblue;
   padding: 5px;
   z-index: 1;
 }
-.main-index .explicacion-aguaDulce p {
+.main-index .navbar-peces .explicacion-aguaDulce p {
   font-family: Kanit-ExtraLight;
   padding: 5px;
 }
-.main-index .explicacion-aguaSalada {
+.main-index .navbar-peces .explicacion-aguaSalada {
   margin: 20px;
   border-radius: 10px;
   background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
 }
-.main-index .explicacion-aguaSalada h2 {
+.main-index .navbar-peces .explicacion-aguaSalada h2 {
   font-family: letras-finas;
   color: aliceblue;
   padding: 5px;
   z-index: 1;
 }
-.main-index .explicacion-aguaSalada p {
+.main-index .navbar-peces .explicacion-aguaSalada p {
   font-family: Kanit-ExtraLight;
   padding: 5px;
 }
-.main-index .Reptiles-acuaticos {
+.main-index .navbar-peces .Reptiles-acuaticos {
   margin: 20px;
   border-radius: 10px;
   background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
 }
-.main-index .Reptiles-acuaticos h2 {
+.main-index .navbar-peces .Reptiles-acuaticos h2 {
   font-family: letras-finas;
   color: aliceblue;
   padding: 5px;
   z-index: 1;
 }
-.main-index .Reptiles-acuaticos p {
+.main-index .navbar-peces .Reptiles-acuaticos p {
   font-family: Kanit-ExtraLight;
   padding: 5px;
 }
-.main-index .Invertebrados-acuaticos {
+.main-index .navbar-peces .Invertebrados-acuaticos {
   margin: 20px;
   border-radius: 10px;
   background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
   margin-bottom: 100px;
 }
-.main-index .Invertebrados-acuaticos h2 {
+.main-index .navbar-peces .Invertebrados-acuaticos h2 {
   font-family: letras-finas;
   color: aliceblue;
   padding: 5px;
   z-index: 1;
 }
-.main-index .Invertebrados-acuaticos p {
+.main-index .navbar-peces .Invertebrados-acuaticos p {
   font-family: Kanit-ExtraLight;
   padding: 5px;
 }
