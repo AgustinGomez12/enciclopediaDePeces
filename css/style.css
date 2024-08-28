@@ -846,6 +846,21 @@
 .main-index .container-buscador .btnBuscarP:hover {
   box-shadow: 0 0 10px 1px red;
 }
+.main-index .Introduccion-peces {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 5px;
+}
+.main-index .Introduccion-peces p {
+  font-family: Kanit-ExtraLight;
+  z-index: 1;
+  color: aliceblue;
+  background: linear-gradient(90deg, rgba(0, 0, 255, 0.795), rgba(109, 109, 7, 0.76), rgba(0, 255, 0, 0.753));
+  border-radius: 5px;
+  padding: 5px;
+}
 .main-index .container-wikiPeces {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -855,6 +870,7 @@
   margin: 2px;
   border-radius: 10px;
   gap: 10px;
+  margin-bottom: 50px;
 }
 .main-index .container-wikiPeces .container-aguaDulce {
   display: flex;
@@ -943,6 +959,67 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Kanit-ExtraLight;
+}
+.main-index .explicacion-aguaDulce {
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
+}
+.main-index .explicacion-aguaDulce h2 {
+  font-family: letras-finas;
+  color: aliceblue;
+  padding: 5px;
+  z-index: 1;
+}
+.main-index .explicacion-aguaDulce p {
+  font-family: Kanit-ExtraLight;
+  padding: 5px;
+}
+.main-index .explicacion-aguaSalada {
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
+}
+.main-index .explicacion-aguaSalada h2 {
+  font-family: letras-finas;
+  color: aliceblue;
+  padding: 5px;
+  z-index: 1;
+}
+.main-index .explicacion-aguaSalada p {
+  font-family: Kanit-ExtraLight;
+  padding: 5px;
+}
+.main-index .Reptiles-acuaticos {
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
+}
+.main-index .Reptiles-acuaticos h2 {
+  font-family: letras-finas;
+  color: aliceblue;
+  padding: 5px;
+  z-index: 1;
+}
+.main-index .Reptiles-acuaticos p {
+  font-family: Kanit-ExtraLight;
+  padding: 5px;
+}
+.main-index .Invertebrados-acuaticos {
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(0, 183, 255), rgb(49, 49, 160));
+  margin-bottom: 100px;
+}
+.main-index .Invertebrados-acuaticos h2 {
+  font-family: letras-finas;
+  color: aliceblue;
+  padding: 5px;
+  z-index: 1;
+}
+.main-index .Invertebrados-acuaticos p {
+  font-family: Kanit-ExtraLight;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

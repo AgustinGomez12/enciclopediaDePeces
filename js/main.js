@@ -2,6 +2,22 @@
 const mainIndex = document.getElementById("mainIndex")
 //Constante de el main Index
 
+//FUNCION PARA RECUPERAR INDEX
+//VARIABLES DE RECUPERAR INDEX
+const containerCasa = document.getElementById("containerCasa")
+//VARIABLES DE RECUPERAR INDEX
+function recuperarIndex () {
+containerCasa.addEventListener(`click`, ()=>{
+    textoDeIncio.style.display = "flex"
+    tituloDeNoticias.style.display = "flex"
+    containerDeNoticias.style.display = "flex"
+    videosInteresantes.style.display = "flex"
+    contenidoEducativoTitulo.style.display = "flex"
+    contenidoEducativo.style.display = "flex"
+    pulpito.style.display = "flex"
+    navbarPeces.style.display = "none"
+})}recuperarIndex()
+//FUNCION PARA RECUPERAR INDEX
 //Constate de boton del ducumental
 const btnDocu = document.getElementById("buttonDocumentales")
 const btnDocu2 = document.getElementById("buttonDocumentales2")
@@ -105,12 +121,14 @@ const contenidoEducativo = document.getElementById("contenidoEducativo")
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
 function contenidoPeces() {
     containerPez.addEventListener(`click`, () => {
-        textoDeIncio.remove()
-        tituloDeNoticias.remove()
-        containerDeNoticias.remove()
-        videosInteresantes.remove()
-        contenidoEducativoTitulo.remove()
-        contenidoEducativo.remove()
+        textoDeIncio.style.display = "none"
+        tituloDeNoticias.style.display = "none"
+        containerDeNoticias.style.display = "none"
+        videosInteresantes.style.display = "none"
+        contenidoEducativoTitulo.style.display = "none"
+        contenidoEducativo.style.display = "none"
+        pulpito.style.display = "none"
+        navbarPeces.style.display = "grid"
     })
 } contenidoPeces()
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
@@ -119,6 +137,7 @@ function contenidoPeces() {
 
 //VARIABLES PARA GENERARA CONTENIDO EN PECES
 const generarNavPeces = document.createElement("div")
+const pulpito = document.getElementById("pulpito")
 //VARIABLES PARA GENERARA CONTENIDO EN PECES
 function generarContenidoPeces() {
     generarNavPeces.className = "navbar-peces"
@@ -127,10 +146,19 @@ function generarContenidoPeces() {
                                      <input type="search" placeholder="Buscar por nombre🔍" name="buscadorPesces" id="buscadorP">
                                      <button class="btnBuscarP">Buscar</button>
                                 </div>` +
+                                `<div class="Introduccion-peces">
+                                    <p>
+                                       En esta seccion encotraras contenido sobre peces,reptiles y invertebrados.
+                                       En cada uno de los enlaces habra un breve resumen de especies,catalogacion
+                                       y nivel de dificultad a la hora de mantener la especie en cautiverio,muchas de
+                                       estas especies saldran como no recomendadas para dicha practica.
+                                       (Si buscas un pez en especifico puedes usar el buscador).
+                                    </p>
+                                </div>`+
                                 `<nav class="container-wikiPeces">
                                  <ul class="container-aguaDulce">
                                     <h2>
-                                        Peces de agua Dulce 
+                                        Peces de agua Dulce. 
                                     </h2>
 
                                     <li>
@@ -466,7 +494,7 @@ function generarContenidoPeces() {
 
                                  <ul class="Invertebrados">
                                   <h2>
-                                       Peces de agua salada 
+                                       Invertebrados. 
                                   </h2>
 
                                   <li>
@@ -496,7 +524,7 @@ function generarContenidoPeces() {
 
                                  <ul class="reptiles">
                                  <h2>
-                                     Reptiles
+                                     Reptiles.
                                  </h2>
 
                                    <li>
@@ -523,11 +551,75 @@ function generarContenidoPeces() {
                                     </a>
                                     </li>
                                  </ul>
-                             </nav>`
+                             </nav>` +
+
+                             `<div class="explicacion-aguaDulce">
+                                 <h2>
+                                    Peces de agua dulce
+                                 </h2>
+                                 <p>
+                                    Los  peces de agua dulce son aquellos que viven en cuerpos de agua con baja salinidad, como ríos, lagos y estanques. 
+                                    Los parametros de estos peces varian de una especie a la otra. En cautividad suelen ser peces menos exigentes
+                                    que los de agua salada.
+                                 </p>
+                             </div>` +
+
+                             `<div class="explicacion-aguaSalada">
+                             <h2>
+                                Peces de agua salada
+                             </h2>
+                             <p>
+                                Los peces de agua salada existen en una gran variedad de colores y formas.
+                                Estos peces tienen necesidades específicas en cuanto a la salinidad del agua, temperatura y alimentación.
+                                Son unos peces muy desafiantes en cautividad.
+                             </p>
+                             </div>` +
+
+                             
+                             `<div class="Reptiles-acuaticos">
+                             <h2>
+                                Reptiles acuaticos
+                             </h2>
+                             <p>
+                                Son reptiles adaptados a el agua, estos reptiles tienen adaptaciones especiliales,
+                                que les permiten vivir en el agua,como respiraciòn eficiente bajo el agua y mecanismos para 
+                                expulsar el exceso de sal en caso de los reptiles marinos.
+                             </p>
+                             </div>` +
+
+                                
+                             `<div class="Invertebrados-acuaticos">
+                             <h2>
+                                Invertebrados acuaticos
+                             </h2>
+                             <p>
+                                Son aquellos aquellos animales que vivien en el agua y no tienen columna vertebral.
+                                Tienen adaptaciones ùnicas para sovrevivir en sus entornos acuàticos,como camuflarse,
+                                exoesquleto protectores.
+                             </p>
+                             </div>` 
+
     mainIndex.appendChild(generarNavPeces)
 
 } generarContenidoPeces()
 
 //FUNCION PARA GENERAR LA INFORMACION DE LOS PECES
 
+//FUNCION PARA GENERAR ACUARIOS
 
+//VARIABLES PARA GENERAR ACUARIOS
+const containerAcuario = document.getElementById("containerAcuario")
+const navbarPeces = document.getElementById("navbarPeces")
+//VARIABLES PARA GENERAR ACUARIOS
+function generarAcuarios () {
+containerAcuario.addEventListener(`click`,()=>{
+    textoDeIncio.style.display = "none"
+    tituloDeNoticias.style.display = "none"
+    containerDeNoticias.style.display = "none"
+    videosInteresantes.style.display = "none"
+    contenidoEducativoTitulo.style.display = "none"
+    contenidoEducativo.style.display = "none"
+    navbarPeces.style.display = "none"
+})
+}generarAcuarios()
+//FUNCION PARA GENERAR ACUARIOS
