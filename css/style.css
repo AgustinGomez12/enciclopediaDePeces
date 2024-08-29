@@ -1039,17 +1039,31 @@
 .main-index .contenido-acuarios .container-contenidotyp {
   background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
   border-radius: 10px;
-  padding: 5px;
+  padding: 1px;
+  color: aliceblue;
 }
 .main-index .contenido-acuarios .container-vidrio {
   background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
   border-radius: 10px;
-  padding: 5px;
+  padding: 1px;
+  color: aliceblue;
 }
 .main-index .contenido-acuarios .containar-filtracion {
   background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
   border-radius: 10px;
-  padding: 5px;
+  padding: 1px;
+  color: aliceblue;
+}
+.main-index .contenido-acuarios .containar-filtracion .titulo-img {
+  text-decoration: underline;
+}
+.main-index .contenido-acuarios .containar-filtracion .container-img {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-index .contenido-acuarios .containar-filtracion .container-img img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

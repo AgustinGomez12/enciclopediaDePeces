@@ -652,7 +652,54 @@ contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
                                        químicos toxicos que se van acumulando por la actividad biológica de peces y plantas.
                                        Tambien limpian el agua del medicamento si es que emos estado sometiendo a un pez 
                                        a un tratamiento por enfermedad. El filtro simula el movimiento de agua de un lago o 
-                                       rio y elimina compuestos quimicos (como nitratos,nitritos,fosfatos,etc) 
+                                       rio y elimina compuestos quimicos (como nitratos,nitritos,fosfatos,etc). 
+                                    </p>
+                                     <br>
+                                    <p> 
+                                      Exiten multitud de sistemas que se pueden utilizar para filtrar el agua
+                                      del acuario, cada sistema tiene sus ventajas y desventajas tu decides cual
+                                      se amolda mas a tu proyecto.Los filtros se dividen en dos grupos, internos y 
+                                      externos. 
+                                    </p>
+                                    <br>
+                                    <h3>
+                                       ¿Como funciona un filtro?
+                                    </h3>
+                                    <p>
+                                     1)Entrada de agua sucia del acuario.Esta agua contiene restos
+                                     de comida y otros detritos),tambien contiene sustacias nocivas
+                                     como (amoniaco,nitritos,etc).
+                                     <br>
+                                     <br>
+                                     2)Cabeza de poder, esta se encarga de succinar el agua y permitir 
+                                     que esta recorra un sistema de tubos para dar con el material filtrante.
+                                     <br>
+                                     <br>
+                                     3)Canastillo contenedor, en esta parate del filtro se encuentra la magia 
+                                     del mismo, es decir todo el material filtrante, en el siguente orden:Arriba 
+                                     del todo la filtracion mecanica que retiene todas las particulas solidas.
+                                     En medio la filtracion biologica que tranforma amoniaco y nitritos en nitratos.
+                                     En la parte baja la filtracion quimica que no siempre esta presente en los filtros
+                                     ya que solo se pone en ocasiones especiales.
+                                     <br>
+                                     <br>
+                                     4)Por ultimo la salida de agua limpia.
+                                    </p>
+                                    <br>
+                                    <h3 class = "titulo-img">
+                                       Reprecentacion de filtro de acuario:
+                                    </h3>
+                                    <div class= "container-img">
+                                         <img src="./img/filtracion.png" alt="">                                   
+                                    </div>
+                                    <h3>
+                                       Filtro de acuario interno
+                                    </h3>
+                                    <p>
+                                       Los filtros de acuario internos van por dentro del acuario por lo tanto
+                                       suelen se mas silenciosos que los externos, son recomendables para una 
+                                       cantidad de peces pequeña ya que varios de estos modelos no cuenta con 
+                                       toda la capacidad para almacenar el material filtrante.
                                     </p>
                                 </div>`
 mainIndex.appendChild(contenidoDeAcuarios)

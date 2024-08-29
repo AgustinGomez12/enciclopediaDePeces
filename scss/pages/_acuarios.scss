@@ -1,29 +1,46 @@
-.main-index{
-    .contenido-acuarios{
+.main-index {
+    .contenido-acuarios {
         display: none;
         flex-direction: column;
         padding: 5px;
         border-radius: 10px;
         z-index: 1;
-        font-family:  Kanit-ExtraLight;
+        font-family: Kanit-ExtraLight;
         gap: 20px;
 
         .container-contenidotyp {
-            background: linear-gradient(90deg,rgb(68, 149, 68),rgba(2, 71, 2, 0.681),rgba(0, 0, 255, 0.701));
+            background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
             border-radius: 10px;
-            padding: 5px;
+            padding: 1px;
+            color: aliceblue;
         }
 
-        .container-vidrio{
-            background: linear-gradient(90deg,rgb(68, 149, 68),rgba(2, 71, 2, 0.681),rgba(0, 0, 255, 0.701));
+        .container-vidrio {
+            background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
             border-radius: 10px;
-            padding: 5px;
+            padding: 1px;
+            color: aliceblue;
         }
 
-        .containar-filtracion{
-            background: linear-gradient(90deg,rgb(68, 149, 68),rgba(2, 71, 2, 0.681),rgba(0, 0, 255, 0.701));
+        .containar-filtracion {
+            background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
             border-radius: 10px;
-            padding: 5px;
+            padding: 1px;
+            color: aliceblue;
+
+            .titulo-img {
+                text-decoration: underline;
+            }
+
+            .container-img {
+                width: 100%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 
