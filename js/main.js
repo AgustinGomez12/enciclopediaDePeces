@@ -106,6 +106,8 @@ const contenidoEducativo = document.getElementById("contenidoEducativo")
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
 function contenidoPeces() {
     containerPez.addEventListener(`click`, () => {
+      const conctacua = document.getElementById("contenidoDeAcuariosId")
+      conctacua.style.display = `none`   
       navbarPeces.style.display = "flex"
       textoDeIncio.style.display = "none"
       tituloDeNoticias.style.display = "none"
@@ -597,10 +599,64 @@ const navbarPeces = document.getElementById("navbarPeces")
 
 
 function generarAcuarios () {
-containerAcuario.addEventListener(`click`,()=>{
- 
+containerAcuario.addEventListener(`click`,()=>{ 
+    const conctacua = document.getElementById("contenidoDeAcuariosId")
+    generarNavPeces.style.display = `none`
+    textoDeIncio.style.display = "none"
+    tituloDeNoticias.style.display = "none"
+    containerDeNoticias.style.display = "none"
+    videosInteresantes.style.display = "none"
+    tituloEdu.style.display = "none"
+    contenidoEducativo.style.display = "none"
+    conctacua.style.display = "flex"
 })
 }generarAcuarios()
+
+//FUNCION PARA GENERAR ACUARIOS
+function contenidoAcuarios (){
+const contenidoDeAcuarios = document.createElement("div")
+contenidoDeAcuarios.className = "contenido-acuarios"
+contenidoDeAcuarios.id = "contenidoDeAcuariosId"
+contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
+                                     <h2>
+                                        ¿Como armar un acuario?
+                                     </h2>
+                                     <p>
+                                        Para armar un acuario hay varias cosas que hay que tener en cuenta,
+                                        para empesar, si va a ser de vidrio o acrílico y que tenga el
+                                        tamaño adecuado para tener los peces que hayamos elegido.Despues hay
+                                        mas detalles como filtro,calentador,iluminacion,sustrato,decoracion y
+                                        el acodicionamiento del agua. Todos estos detalles seran explicados y
+                                        enumerados a continuacion.
+                                     </p>
+                                </div>`+
+                                `<div class="container-vidrio">
+                                     <h2>
+                                        Vidrio del acuario
+                                     </h2>
+                                     <p>
+                                        El cristal que elijamos para el acuario determinara la recistencia y la 
+                                        duracion de el mismo. En rigidez y duracion lo mas recomdable es el acrílico
+                                        pero en dencidaddes de aguas bajas ya que este tiene menos capacidad para contener
+                                        agua que el cristal. Para disminuir la fragilidad del cristal ante los golpes se 
+                                        recomienda calcular el grosor dependiendo de la cantidad de agua que esta tenga.
+                                        (hay varias calculadoras en linea que calculan esta medida).
+                                     </p>                                    
+                                </div>`+
+                                `<div class="containar-filtracion">
+                                    <h2>
+                                       Filtracion  
+                                    </h2>
+                                    <p>
+                                       Es fundamental para mantener el agua limpia y oxigenada. Ademas filtra los componentes
+                                       químicos toxicos que se van acumulando por la actividad biológica de peces y plantas.
+                                       Tambien limpian el agua del medicamento si es que emos estado sometiendo a un pez 
+                                       a un tratamiento por enfermedad. El filtro simula el movimiento de agua de un lago o 
+                                       rio y elimina compuestos quimicos (como nitratos,nitritos,fosfatos,etc) 
+                                    </p>
+                                </div>`
+mainIndex.appendChild(contenidoDeAcuarios)
+}contenidoAcuarios()
 //FUNCION PARA GENERAR ACUARIOS
 
 //FUNCION PARA RECUPERAR INDEX
@@ -610,7 +666,9 @@ const containerBuscador = document.getElementById("containerBuscador")
 //VARIABLES DE RECUPERAR INDEX
 function recuperarIndex () {
 containerCasa.addEventListener(`click`, ()=>{
+   const conctacua = document.getElementById("contenidoDeAcuariosId") 
    generarNavPeces.style.display = `none`
+   conctacua.style.display = `none`
    textoDeIncio.style.display = "flex"
    tituloDeNoticias.style.display = "flex"
    containerDeNoticias.style.display = "flex"

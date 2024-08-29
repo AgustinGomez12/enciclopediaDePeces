@@ -1027,4 +1027,29 @@
   padding: 5px;
 }
 
+.main-index .contenido-acuarios {
+  display: none;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 10px;
+  z-index: 1;
+  font-family: Kanit-ExtraLight;
+  gap: 20px;
+}
+.main-index .contenido-acuarios .container-contenidotyp {
+  background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+  border-radius: 10px;
+  padding: 5px;
+}
+.main-index .contenido-acuarios .container-vidrio {
+  background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+  border-radius: 10px;
+  padding: 5px;
+}
+.main-index .contenido-acuarios .containar-filtracion {
+  background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+  border-radius: 10px;
+  padding: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
