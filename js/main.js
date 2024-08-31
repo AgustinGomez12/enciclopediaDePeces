@@ -115,6 +115,8 @@ function contenidoPeces() {
         videosInteresantes.style.display = "none"
         tituloEdu.style.display = "none"
         contenidoEducativo.style.display = "none"
+        dezCarruseledu.style.display = `none`
+        dezCarruselnot.style.display = `none`
     })
 } contenidoPeces()
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
@@ -609,6 +611,8 @@ function generarAcuarios() {
         tituloEdu.style.display = "none"
         contenidoEducativo.style.display = "none"
         conctacua.style.display = "flex"
+        dezCarruseledu.style.display = `none`
+        dezCarruselnot.style.display = `none`
     })
 } generarAcuarios()
 
@@ -648,37 +652,38 @@ function contenidoAcuarios() {
                                        ¿Que sustrato utilizar?
                                     </h2>
                                     <h4>
-                                       Sustratos nutritivos
+                                       Sustratos nutritivos:
                                     </h4>
                                     <p>
                                        Los sustratos nutritivos son para acuarios con gran volumenes de plantas:\n
                                        <br> 
                                        <ul>
                                        <li>
-                                          Arcilla:Contiene nutrientes como magnisio,potasio,hierro y fósforo.
+                                         <strong>Arcilla:</strong>Contiene nutrientes como magnisio,potasio,hierro y fósforo.
                                        </li> 
                                        <br>
                                        <li>
-                                          Tierra:Rica en nutrientes,ideal para el crecimiento de las raíces de las 
+                                          <strong>Tierra:</strong>Rica en nutrientes,ideal para el crecimiento de las raíces de las 
                                           plantas acuaticas.
                                        </li>
                                        <br>
                                        <li>
-                                          Mezclas:Combinan materiales como tierra,arcilla y turba para ofrecer una
+                                          <strong>Mezclas:</strong>Combinan materiales como tierra,arcilla y turba para ofrecer una
                                           variedad de nutrientes.
                                        </li>
                                        </ul>
+                                       <br>
                                     </p>
-                                     <h4>
-                                       Sustratos inertes :\n
-                                    </h4>
+                                    <h4>
+                                       Sustratos inertes:
+                                    </h4>            
+                                    <p>
                                     Ideales cuando tenemos peces sencibles a los nutrientes del 
                                     ustrato nutritivo.
-                                    <p>
                                     <ul>
                                     <br>
                                     <li>
-                                     Grava:Facil de limpiar,disponible de varios colores y tamaños.Sirve para mantener
+                                     <strong>Grava:</strong>Facil de limpiar,disponible de varios colores y tamaños.Sirve para mantener
                                      plantas con raices poco profundas y es recomendable comprarla lo mas natural posible
                                      y sin colores quimicos.
                                     </li>
@@ -801,6 +806,39 @@ function contenidoAcuarios() {
                                         </h4>
                                          <img src="./img/calentador.webp" alt="">
                                      </figure>
+                                </div>`+
+        `<div class="container-acondicionamientoagua">
+                                     <h2>
+                                         Acondicionamiento del agua
+                                     </h2>
+                                     <p>
+                                       Para acondicionar el agua de forma correcta tendremos que hacer un
+                                       proseso cuyo nombre es el ciclado.Este proceso implica el establecimiento de colonias
+                                       de bacterias beneficiosas que transforman compuestos tóxicos, como el amoníaco y los nitritos,
+                                       en nitratos que son menos dañinos.Este proceso puede durar 30 y 45 días,es inportante no introducir
+                                       peces en el acuario mientras este proceso se esta llevando a cabo,ya que los niveles de amoniaco y nitritos
+                                       puede matarlos.
+                                     </p>
+                                     <br>
+                                     <h4>
+                                        ¿Como realizar el ciclado?
+                                     </h4>
+                                     <p>
+                                        Para hacer el ciclado existen dos metodos uno mas rapido que el 
+                                        otro pero un poco mas costoso.Metodo rapido comprar bacterias ya
+                                        desarrolladas e introducirlas al cabo de unos cuantos dias el acuario 
+                                        ya estara listo.La forma comun de realizarlo es con alimento comercial
+                                        tirarlo mientras el acuario tiene el filtro en funcionamiento y dejarlo que 
+                                        se baya comvirtiendo en amoniaco esto hara que el primer grupo de bacterias 
+                                        aparesca estas comvierten el amoniaco en nitritos que tambien son toxicos.
+                                        luego de un tiempo aparece otro genero de bacterias llamadas nitrobacters
+                                        que comvierten los nitritos en nitratos que son mucho menos toxicos para 
+                                        nuestros peces y pueden ser absorbidos por las plantas o eliminados por cambios
+                                        de agua regulares.Pasado 30 o 45 dias las colonias de bacterias se estabilizan 
+                                        manteniendo el amoniaco y nitritos bajos, creando un ambiente seguro para los 
+                                        peces.(Es importante medir siempre los prametros antes de introducir los peces
+                                        con un test, estos los venden en las tiendas de acuarios).
+                                     </p>
                                 </div>`
     mainIndex.appendChild(contenidoDeAcuarios)
 } contenidoAcuarios()
@@ -810,6 +848,8 @@ function contenidoAcuarios() {
 //VARIABLES DE RECUPERAR INDEX
 const containerCasa = document.getElementById("containerCasa")
 const containerBuscador = document.getElementById("containerBuscador")
+const dezCarruseledu = document.getElementById("dezCarruseledu")
+const dezCarruselnot = document.getElementById("dezCarruselnot")
 //VARIABLES DE RECUPERAR INDEX
 function recuperarIndex() {
     containerCasa.addEventListener(`click`, () => {
@@ -822,5 +862,7 @@ function recuperarIndex() {
         videosInteresantes.style.display = "flex"
         tituloEdu.style.display = "flex"
         contenidoEducativo.style.display = "flex"
+         dezCarruseledu.style.display = `flex`
+        dezCarruselnot.style.display = `flex`
     })
 } recuperarIndex()

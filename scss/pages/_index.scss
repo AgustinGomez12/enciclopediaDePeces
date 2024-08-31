@@ -20,7 +20,7 @@
         left: 30px;
         top: 30px;
         box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.678);
-        
+
         p {
             font-size: 40px;
             opacity: 50%;
@@ -260,6 +260,45 @@
         color: aliceblue;
         font-family: Kanit-BlackItalic;
         z-index: 1;
+    }
+
+    .container-dezlizar {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        font-family: Kanit-BlackItalic;
+        z-index: 1;
+        position: relative;
+
+        h5 {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            animation-name: color-rotacion;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            width: 200px;
+            padding: 25px;
+            background-size: 400% 400%;
+            background: linear-gradient(50deg, rgba(255, 0, 0, 0.793), rgba(182, 180, 180, 0.783), rgb(123, 0, 255), rgb(6, 125, 6));
+            border-radius: 50px;
+
+        }
+
+        p {
+            padding-left: 8px;
+            animation-name: movimiento-flechas;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     }
 
     .container-ultimasNoticias {
@@ -535,12 +574,13 @@
             }
         }
     }
-    
-    .container-tituloEducativo{
+
+    .container-tituloEducativo {
         display: flex;
         justify-content: center;
         margin-top: 20px;
-        h2{
+
+        h2 {
             font-size: 30px;
             font-family: Kanit-BlackItalic;
             color: rgb(255, 255, 255);
@@ -558,6 +598,7 @@
         position: relative;
         margin-bottom: 100px;
         scrollbar-width: none;
+
         .container-documental {
             min-width: 90%;
             height: 350px;

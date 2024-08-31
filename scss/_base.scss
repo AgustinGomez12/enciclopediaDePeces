@@ -19,6 +19,57 @@
     src: url("../fonts/Kanit-ExtraLight.ttf");
 }
 
+@keyframes movimiento-flechas {
+    0%{
+        letter-spacing: 0;
+    }
+
+    20%{
+        letter-spacing: 3px;
+    }
+
+    40%{
+        letter-spacing: 0;
+    }
+
+    60%{
+        letter-spacing: 3px;
+    }
+
+    80%{
+        letter-spacing: 0;
+    }
+
+    100%{
+        letter-spacing: 3px;
+    }
+}
+
+@keyframes color-rotacion {
+    0%{
+        background-size: 300%;
+    }    
+
+    20%{
+        background-size:200%;
+    }
+
+    40%{
+        background-size: 150%;
+    }
+
+    60%{
+        background-size:200%;
+    }
+
+    80%{
+        background-size: 150%;
+    }
+
+    100%{
+        background-size: 300%;
+    }
+}
 
 
 

@@ -16,6 +16,46 @@
   font-family: Kanit-ExtraLight;
   src: url("../fonts/Kanit-ExtraLight.ttf");
 }
+@keyframes movimiento-flechas {
+  0% {
+    letter-spacing: 0;
+  }
+  20% {
+    letter-spacing: 3px;
+  }
+  40% {
+    letter-spacing: 0;
+  }
+  60% {
+    letter-spacing: 3px;
+  }
+  80% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 3px;
+  }
+}
+@keyframes color-rotacion {
+  0% {
+    background-size: 300%;
+  }
+  20% {
+    background-size: 200%;
+  }
+  40% {
+    background-size: 150%;
+  }
+  60% {
+    background-size: 200%;
+  }
+  80% {
+    background-size: 150%;
+  }
+  100% {
+    background-size: 300%;
+  }
+}
 .header-index {
   display: flex;
   justify-content: center;
@@ -443,6 +483,41 @@
   font-family: Kanit-BlackItalic;
   z-index: 1;
 }
+.main-index .container-dezlizar {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-family: Kanit-BlackItalic;
+  z-index: 1;
+  position: relative;
+}
+.main-index .container-dezlizar h5 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  animation-name: color-rotacion;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 200px;
+  padding: 25px;
+  background-size: 400% 400%;
+  background: linear-gradient(50deg, rgba(255, 0, 0, 0.793), rgba(182, 180, 180, 0.783), rgb(123, 0, 255), rgb(6, 125, 6));
+  border-radius: 50px;
+}
+.main-index .container-dezlizar p {
+  padding-left: 8px;
+  animation-name: movimiento-flechas;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .main-index .container-ultimasNoticias {
   display: flex;
   justify-content: center;
@@ -761,57 +836,28 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, rgb(29, 228, 235), rgb(19, 108, 192), rgb(7, 114, 122));
+  position: relative;
 }
-.footer-index .container-links1 {
+.footer-index .container-logopulpo {
   display: flex;
-  margin: 10px;
+  width: 100%;
 }
-.footer-index .container-links1 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.footer-index .container-logopulpo img {
+  width: 100%;
+  opacity: 40%;
 }
-.footer-index .container-links1 ul li {
-  list-style: none;
-}
-.footer-index .container-links1 ul li a {
-  text-decoration: none;
-  font-family: letras-finas;
-  color: aliceblue;
-}
-.footer-index .container-links2 {
-  display: flex;
-  margin: 10px;
-}
-.footer-index .container-links2 ul {
+.footer-index .container-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.footer-index .container-links2 ul li {
-  list-style: none;
-}
-.footer-index .container-links2 ul li a {
-  text-decoration: none;
-  font-family: letras-finas;
-  color: aliceblue;
-}
-.footer-index .container-links3 {
+.footer-index .container-info h2 {
   display: flex;
-  margin: 10px;
-}
-.footer-index .container-links3 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.footer-index .container-links3 ul li {
-  list-style: none;
-}
-.footer-index .container-links3 ul li a {
-  text-decoration: none;
-  font-family: letras-finas;
-  color: aliceblue;
+  justify-content: center;
 }
 
 .main-index .navbar-peces {
@@ -1035,6 +1081,8 @@
   z-index: 1;
   font-family: Kanit-ExtraLight;
   gap: 20px;
+  margin-bottom: 100px;
+  margin-top: 40px;
 }
 .main-index .contenido-acuarios .container-contenidotyp {
   background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
@@ -1053,6 +1101,9 @@
   border-radius: 10px;
   padding: 1px;
   color: aliceblue;
+}
+.main-index .contenido-acuarios .containar-filtracion h4 {
+  text-decoration: underline;
 }
 .main-index .contenido-acuarios .containar-filtracion .titulo-img {
   text-decoration: underline;
@@ -1085,6 +1136,9 @@
   padding: 1px;
   color: aliceblue;
 }
+.main-index .contenido-acuarios .container-calentador h4 {
+  text-decoration: underline;
+}
 .main-index .contenido-acuarios .container-calentador .calentador-img {
   padding: 10px;
 }
@@ -1097,6 +1151,18 @@
   border-radius: 10px;
   padding: 1px;
   color: aliceblue;
+}
+.main-index .contenido-acuarios .container-sustrato h4 {
+  text-decoration: underline;
+}
+.main-index .contenido-acuarios .container-acondicionamientoagua {
+  background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+  border-radius: 10px;
+  padding: 1px;
+  color: aliceblue;
+}
+.main-index .contenido-acuarios .container-acondicionamientoagua h4 {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
