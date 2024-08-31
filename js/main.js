@@ -839,6 +839,62 @@ function contenidoAcuarios() {
                                         peces.(Es importante medir siempre los prametros antes de introducir los peces
                                         con un test, estos los venden en las tiendas de acuarios).
                                      </p>
+                                </div>`+
+
+                                `<h2>Agua dulce</h2>`+
+
+                                `<div class="especies-recomendadas">
+                                     <div class="peces-deaguadulce">
+                                       
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Goldfish
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/ea/3d/b0/ea3db09a7e34e2cecb6472584826d7f7.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Guppy
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/47/d1/c9/47d1c953110352bf753e1078e841affb.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Betta
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/c7/66/e5/c766e550a22062f91bbeb2946d652405.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   pez angel
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/65/f2/b4/65f2b48df266744d9daab17905808725.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Killis
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/54/ee/71/54ee716d3a29b10ddbf2faf47040e9cc.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Corydoras
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/1d/b4/38/1db4385df8b6c774ab19c7182c4d0710.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                     </div>
                                 </div>`
     mainIndex.appendChild(contenidoDeAcuarios)
 } contenidoAcuarios()

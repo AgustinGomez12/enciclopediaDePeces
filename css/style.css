@@ -1164,5 +1164,49 @@
 .main-index .contenido-acuarios .container-acondicionamientoagua h4 {
   text-decoration: underline;
 }
+.main-index .contenido-acuarios .especies-recomendadas {
+  display: flex;
+  min-width: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce {
+  display: flex;
+  gap: 10px;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce h3 {
+  background: linear-gradient(90deg, red, lime);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: -100;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce h4 {
+  display: flex;
+  justify-content: center;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce .pez-figure {
+  display: flex;
+  justify-content: center;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce .pez-figure figure {
+  position: relative;
+  background-color: rgb(166, 116, 51);
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce .pez-figure figure h4 {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.755), rgba(0, 255, 0, 0.795));
+  width: 100%;
+  position: absolute;
+}
+.main-index .contenido-acuarios .especies-recomendadas .peces-deaguadulce .pez-figure figure img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
