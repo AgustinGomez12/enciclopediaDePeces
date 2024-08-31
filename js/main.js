@@ -894,6 +894,64 @@ function contenidoAcuarios() {
                                                 <img src="https://i.pinimg.com/564x/1d/b4/38/1db4385df8b6c774ab19c7182c4d0710.jpg" alt="">
                                              </figure>
                                          </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Axolote
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/ed/ee/9b/edee9baeb5bdba9084363648b76cca8c.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                     </div>
+                                </div>`+
+
+                                `<h2>
+                                    Agua salada
+                                </h2>`+
+
+                                `<div class="especies-recomendadas">
+                                     <div class="peces-desalada">
+                                       
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Pez payaso
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/54/d6/f3/54d6f37e9d6641522e63e3093d90e119.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Pez Cirujano
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/9f/89/77/9f89770bc521356d504e2247da874e42.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Pez mandarìn
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/eb/af/cf/ebafcf2f79d806250e011c0eef38415a.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Pez angel enano
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/e2/58/6b/e2586b4dbb96329589bf70bcd4117e7a.jpg" alt="">
+                                             </figure>
+                                         </div>
+                                         <div class="pez-figure">
+                                             <figure>
+                                                <h4>
+                                                   Damiselas
+                                                </h4>
+                                                <img src="https://i.pinimg.com/564x/53/e9/1a/53e91a3204ed09f69889b71859040fb0.jpg" alt="">
+                                             </figure>
+                                         </div>
                                      </div>
                                 </div>`
     mainIndex.appendChild(contenidoDeAcuarios)
