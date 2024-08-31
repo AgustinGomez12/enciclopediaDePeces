@@ -41,6 +41,45 @@
                     width: 100%;
                 }
             }
+
+            .img-interno{
+                padding: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .img-externo{
+                padding: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .container-calentador{
+            background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+            border-radius: 10px;
+            padding: 1px;
+            color: aliceblue;
+
+            .calentador-img{
+                padding: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .container-sustrato{
+            background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+            border-radius: 10px;
+            padding: 1px;
+            color: aliceblue;
+
         }
     }
 

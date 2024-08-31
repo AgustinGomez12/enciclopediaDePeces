@@ -1065,5 +1065,38 @@
 .main-index .contenido-acuarios .containar-filtracion .container-img img {
   width: 100%;
 }
+.main-index .contenido-acuarios .containar-filtracion .img-interno {
+  padding: 10px;
+}
+.main-index .contenido-acuarios .containar-filtracion .img-interno img {
+  width: 100%;
+  border-radius: 10px;
+}
+.main-index .contenido-acuarios .containar-filtracion .img-externo {
+  padding: 10px;
+}
+.main-index .contenido-acuarios .containar-filtracion .img-externo img {
+  width: 100%;
+  border-radius: 10px;
+}
+.main-index .contenido-acuarios .container-calentador {
+  background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+  border-radius: 10px;
+  padding: 1px;
+  color: aliceblue;
+}
+.main-index .contenido-acuarios .container-calentador .calentador-img {
+  padding: 10px;
+}
+.main-index .contenido-acuarios .container-calentador .calentador-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.main-index .contenido-acuarios .container-sustrato {
+  background: linear-gradient(90deg, rgb(68, 149, 68), rgba(2, 71, 2, 0.681), rgba(0, 0, 255, 0.701));
+  border-radius: 10px;
+  padding: 1px;
+  color: aliceblue;
+}
 
 /*# sourceMappingURL=style.css.map */

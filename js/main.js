@@ -106,15 +106,15 @@ const contenidoEducativo = document.getElementById("contenidoEducativo")
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
 function contenidoPeces() {
     containerPez.addEventListener(`click`, () => {
-      const conctacua = document.getElementById("contenidoDeAcuariosId")
-      conctacua.style.display = `none`   
-      navbarPeces.style.display = "flex"
-      textoDeIncio.style.display = "none"
-      tituloDeNoticias.style.display = "none"
-      containerDeNoticias.style.display = "none"
-      videosInteresantes.style.display = "none"
-      tituloEdu.style.display = "none"
-      contenidoEducativo.style.display = "none" 
+        const conctacua = document.getElementById("contenidoDeAcuariosId")
+        conctacua.style.display = `none`
+        navbarPeces.style.display = "flex"
+        textoDeIncio.style.display = "none"
+        tituloDeNoticias.style.display = "none"
+        containerDeNoticias.style.display = "none"
+        videosInteresantes.style.display = "none"
+        tituloEdu.style.display = "none"
+        contenidoEducativo.style.display = "none"
     })
 } contenidoPeces()
 //FUNCION PARA REMOVER CONTENIDO DE INCIO AL HACER CLICK PEZ
@@ -132,7 +132,7 @@ function generarContenidoPeces() {
                                      <input type="search" placeholder="Buscar por nombre🔍" name="buscadorPesces" id="buscadorP">
                                      <button class="btnBuscarP">Buscar</button>
                                 </div>` +
-                                `<div class="Introduccion-peces">
+        `<div class="Introduccion-peces">
                                     <p>
                                        En esta seccion encotraras contenido sobre peces,reptiles y invertebrados.
                                        En cada uno de los enlaces habra un breve resumen de especies,catalogacion
@@ -141,7 +141,7 @@ function generarContenidoPeces() {
                                        (Si buscas un pez en especifico puedes usar el buscador).
                                     </p>
                                 </div>`+
-                                `<nav class="container-wikiPeces">
+        `<nav class="container-wikiPeces">
                                  <ul class="container-aguaDulce">
                                     <h2>
                                         Peces de agua Dulce. 
@@ -539,7 +539,7 @@ function generarContenidoPeces() {
                                  </ul>
                              </nav>` +
 
-                             `<div class="explicacion-aguaDulce">
+        `<div class="explicacion-aguaDulce">
                                  <h2>
                                     Peces de agua dulce
                                  </h2>
@@ -550,7 +550,7 @@ function generarContenidoPeces() {
                                  </p>
                              </div>` +
 
-                             `<div class="explicacion-aguaSalada">
+        `<div class="explicacion-aguaSalada">
                              <h2>
                                 Peces de agua salada
                              </h2>
@@ -561,8 +561,8 @@ function generarContenidoPeces() {
                              </p>
                              </div>` +
 
-                             
-                             `<div class="Reptiles-acuaticos">
+
+        `<div class="Reptiles-acuaticos">
                              <h2>
                                 Reptiles acuaticos
                              </h2>
@@ -573,8 +573,8 @@ function generarContenidoPeces() {
                              </p>
                              </div>` +
 
-                                
-                             `<div class="Invertebrados-acuaticos">
+
+        `<div class="Invertebrados-acuaticos">
                              <h2>
                                 Invertebrados acuaticos
                              </h2>
@@ -583,10 +583,10 @@ function generarContenidoPeces() {
                                 Tienen adaptaciones ùnicas para sovrevivir en sus entornos acuàticos,como camuflarse,
                                 exoesquleto protectores.
                              </p>
-                             </div>` 
+                             </div>`
 
     mainIndex.appendChild(generarNavPeces)
-}generarContenidoPeces()
+} generarContenidoPeces()
 
 //FUNCION PARA GENERAR LA INFORMACION DE LOS PECES
 
@@ -598,26 +598,26 @@ const navbarPeces = document.getElementById("navbarPeces")
 //VARIABLES PARA GENERAR ACUARIOS
 
 
-function generarAcuarios () {
-containerAcuario.addEventListener(`click`,()=>{ 
-    const conctacua = document.getElementById("contenidoDeAcuariosId")
-    generarNavPeces.style.display = `none`
-    textoDeIncio.style.display = "none"
-    tituloDeNoticias.style.display = "none"
-    containerDeNoticias.style.display = "none"
-    videosInteresantes.style.display = "none"
-    tituloEdu.style.display = "none"
-    contenidoEducativo.style.display = "none"
-    conctacua.style.display = "flex"
-})
-}generarAcuarios()
+function generarAcuarios() {
+    containerAcuario.addEventListener(`click`, () => {
+        const conctacua = document.getElementById("contenidoDeAcuariosId")
+        generarNavPeces.style.display = `none`
+        textoDeIncio.style.display = "none"
+        tituloDeNoticias.style.display = "none"
+        containerDeNoticias.style.display = "none"
+        videosInteresantes.style.display = "none"
+        tituloEdu.style.display = "none"
+        contenidoEducativo.style.display = "none"
+        conctacua.style.display = "flex"
+    })
+} generarAcuarios()
 
 //FUNCION PARA GENERAR ACUARIOS
-function contenidoAcuarios (){
-const contenidoDeAcuarios = document.createElement("div")
-contenidoDeAcuarios.className = "contenido-acuarios"
-contenidoDeAcuarios.id = "contenidoDeAcuariosId"
-contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
+function contenidoAcuarios() {
+    const contenidoDeAcuarios = document.createElement("div")
+    contenidoDeAcuarios.className = "contenido-acuarios"
+    contenidoDeAcuarios.id = "contenidoDeAcuariosId"
+    contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
                                      <h2>
                                         ¿Como armar un acuario?
                                      </h2>
@@ -630,7 +630,7 @@ contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
                                         enumerados a continuacion.
                                      </p>
                                 </div>`+
-                                `<div class="container-vidrio">
+        `<div class="container-vidrio">
                                      <h2>
                                         Vidrio del acuario
                                      </h2>
@@ -643,7 +643,53 @@ contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
                                         (hay varias calculadoras en linea que calculan esta medida).
                                      </p>                                    
                                 </div>`+
-                                `<div class="containar-filtracion">
+        `<div class="container-sustrato">
+                                    <h2>
+                                       ¿Que sustrato utilizar?
+                                    </h2>
+                                    <h4>
+                                       Sustratos nutritivos
+                                    </h4>
+                                    <p>
+                                       Los sustratos nutritivos son para acuarios con gran volumenes de plantas:\n
+                                       <br> 
+                                       <ul>
+                                       <li>
+                                          Arcilla:Contiene nutrientes como magnisio,potasio,hierro y fósforo.
+                                       </li> 
+                                       <br>
+                                       <li>
+                                          Tierra:Rica en nutrientes,ideal para el crecimiento de las raíces de las 
+                                          plantas acuaticas.
+                                       </li>
+                                       <br>
+                                       <li>
+                                          Mezclas:Combinan materiales como tierra,arcilla y turba para ofrecer una
+                                          variedad de nutrientes.
+                                       </li>
+                                       </ul>
+                                    </p>
+                                     <h4>
+                                       Sustratos inertes :\n
+                                    </h4>
+                                    Ideales cuando tenemos peces sencibles a los nutrientes del 
+                                    ustrato nutritivo.
+                                    <p>
+                                    <ul>
+                                    <br>
+                                    <li>
+                                     Grava:Facil de limpiar,disponible de varios colores y tamaños.Sirve para mantener
+                                     plantas con raices poco profundas y es recomendable comprarla lo mas natural posible
+                                     y sin colores quimicos.
+                                    </li>
+                                    <br>
+                                    <li>
+                                    
+                                    </li>
+                                    </ul>
+                                    </p>
+                                </div>`+
+        `<div class="containar-filtracion">
                                     <h2>
                                        Filtracion  
                                     </h2>
@@ -701,9 +747,63 @@ contenidoDeAcuarios.innerHTML = `<div class="container-contenidotyp">
                                        cantidad de peces pequeña ya que varios de estos modelos no cuenta con 
                                        toda la capacidad para almacenar el material filtrante.
                                     </p>
+                                    <br>
+                                    <h3>
+                                       ¿Como luce un filtro interno?
+                                    </h3>
+                                    <figure class="img-interno">
+                                        <img src="./img/filtro-interno.webp" alt="">
+                                    </figure>
+                                    <br>
+                                    <h3>
+                                       Filtro de acuario externo
+                                    </h3>
+                                    <p>
+                                       Los filtros externos tienen varias ventajas,mayor capasidad de filtrado y
+                                       um mantenimiento mas comodo.Mantienen el agua un poco mas limpia que los
+                                       filtros internos y esto veneficia mucho mas a la vida alvergada en nuestro
+                                       acuario.Estos filtros son muy recomendables para personas recien inciadas en
+                                       el hobby de la acuariofilia.
+                                    </p>
+                                      <br>
+                                    <h3>
+                                       ¿Como luce un filtro externo?
+                                    </h3>
+                                    <figure class="img-externo">
+                                    <h4>
+                                    Filtro canister
+                                    </h4>
+                                        <img src="./img/filtro-canister.webp" alt="">
+                                    </figure>
+                                    <br>
+                                    <figure class="img-externo">
+                                    <h4>
+                                       Filtro cascada
+                                    </h4>
+                                        <img src="./img/filtro-cascada.webp" alt="">
+                                    </figure>
+                                </div>`+
+        `<div class="container-calentador">
+                                     <h2>
+                                        Calentador
+                                     </h2>
+                                     <p>
+                                        Es un elemento esencial para mantener una temperatura constante y
+                                        adecuada para tus peces y plantas.Generalmente, se recomienda una potecia de
+                                        3-5 vatios por cada litro de agua y se recomienda que el calentador sea termo 
+                                        ajustable para poder controlar la temperatura con mas exatitud.Tambien es recomendable
+                                        que venga con la funcion de apagado automatico despues de un rato.La temperatura
+                                        adecuada es entre (24-26°C).
+                                     </p>
+                                     <figure class="calentador-img">
+                                        <h4>
+                                           ¿Como luce un calentador?
+                                        </h4>
+                                         <img src="./img/calentador.webp" alt="">
+                                     </figure>
                                 </div>`
-mainIndex.appendChild(contenidoDeAcuarios)
-}contenidoAcuarios()
+    mainIndex.appendChild(contenidoDeAcuarios)
+} contenidoAcuarios()
 //FUNCION PARA GENERAR ACUARIOS
 
 //FUNCION PARA RECUPERAR INDEX
@@ -711,16 +811,16 @@ mainIndex.appendChild(contenidoDeAcuarios)
 const containerCasa = document.getElementById("containerCasa")
 const containerBuscador = document.getElementById("containerBuscador")
 //VARIABLES DE RECUPERAR INDEX
-function recuperarIndex () {
-containerCasa.addEventListener(`click`, ()=>{
-   const conctacua = document.getElementById("contenidoDeAcuariosId") 
-   generarNavPeces.style.display = `none`
-   conctacua.style.display = `none`
-   textoDeIncio.style.display = "flex"
-   tituloDeNoticias.style.display = "flex"
-   containerDeNoticias.style.display = "flex"
-   videosInteresantes.style.display = "flex"
-   tituloEdu.style.display = "flex"
-   contenidoEducativo.style.display = "flex"
-})
-}recuperarIndex()
+function recuperarIndex() {
+    containerCasa.addEventListener(`click`, () => {
+        const conctacua = document.getElementById("contenidoDeAcuariosId")
+        generarNavPeces.style.display = `none`
+        conctacua.style.display = `none`
+        textoDeIncio.style.display = "flex"
+        tituloDeNoticias.style.display = "flex"
+        containerDeNoticias.style.display = "flex"
+        videosInteresantes.style.display = "flex"
+        tituloEdu.style.display = "flex"
+        contenidoEducativo.style.display = "flex"
+    })
+} recuperarIndex()
