@@ -107,6 +107,14 @@
   background: linear-gradient(90deg, rgb(0, 153, 255), rgb(76, 0, 255));
   overflow: hidden;
 }
+.header-index .container-menu .container-casa a {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
 .header-index .container-menu .container-casa .techo {
   width: 25px;
   height: 25px;
