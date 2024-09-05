@@ -1266,6 +1266,7 @@
   margin-top: 100px;
   width: 100%;
   height: 100%;
+  margin-bottom: 50px;
 }
 .main-noticias1 .container-tiposacuarios h2 {
   padding: 5px;
@@ -1275,6 +1276,13 @@
 }
 .main-noticias1 .container-tiposacuarios p {
   padding: 10px;
+}
+.main-noticias1 .container-tiposacuarios .container-acuaforma {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main-noticias1 .container-tiposacuarios .container-acuaforma img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
