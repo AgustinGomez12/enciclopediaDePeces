@@ -840,7 +840,13 @@ function contenidoAcuarios() {
                                         con un test, estos los venden en las tiendas de acuarios).
                                      </p>
                                 </div>`+
-
+                                
+                                `<div>
+                                     <h2>
+                                        Algunas especies de peces para acuarios
+                                     </h2>
+                                </div>`+
+                                
                                 `<h2>Agua dulce</h2>`+
 
                                 `<div class="especies-recomendadas">
@@ -908,7 +914,15 @@ function contenidoAcuarios() {
                                 `<h2>
                                     Agua salada
                                 </h2>`+
-
+                                `<div>
+                                    <p>
+                                    <strong>
+                                         Estos acuarios requieren mas trabajo.
+                                         <br>
+                                         <a href="">Mas informacion</a>
+                                    </strong>
+                                    </p>
+                                </div>`+
                                 `<div class="especies-recomendadas">
                                      <div class="peces-desalada">
                                        
