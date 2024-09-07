@@ -1,8 +1,14 @@
-//Variable de la casita 
-const containerCasa = document.getElementById("containerCasa")
-//Variable de la casita
+//variables para interaccion documentales
+const headerDocumentales = document.getElementById("headerDocumentales")
+const botonDesplegarMenu = document.getElementById("botonDesplegarMenu")
+//variables para interaccion documentales
 
-//Funcio para redirigir a incio
-
-//Fucion para redirigir a inicio
+//FUNCION PARA DESPLEGAR MENU
+function desplegarMenu () {
+    botonDesplegarMenu.addEventListener(`click`, ()=>{
+        headerDocumentales.style.height = "70px"
+    
+    })
+}desplegarMenu()
+//FUNCION PARA DESPLEGAR MENU
 

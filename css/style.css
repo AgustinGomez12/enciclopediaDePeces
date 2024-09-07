@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+* body {
+  overflow: hidden;
+}
 
 @font-face {
   font-family: letras-finas;
@@ -1444,6 +1447,58 @@
 .main-pecesCarnivoros .containar-pecesCanivoros .video-infoC {
   display: flex;
   width: 100%;
+}
+
+.main-documentales {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(0, 162, 255), rgba(17, 0, 255, 0.863));
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.header-ducumentales {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.678), rgba(72, 71, 71, 0.707), rgba(0, 0, 0, 0.668), rgba(111, 111, 111, 0.737));
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  top: -10px;
+  transition: 5s;
+}
+.header-ducumentales .volver-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.header-ducumentales .volver-inicio svg {
+  width: 30px;
+  padding: 1px;
+  color: coral;
+}
+.header-ducumentales .volver-inicio h6 {
+  color: coral;
+  font-family: Kanit-ExtraLight;
+}
+.header-ducumentales .volver-inicio a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-ducumentales .button-desplegar {
+  background-color: rgba(72, 71, 71, 0.934);
+  width: 25px;
+  height: 25px;
+  border-radius: 0 0 10px 10px;
+  top: 10px;
+}
+.header-ducumentales .button-desplegar svg {
+  color: aliceblue;
+  padding: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
